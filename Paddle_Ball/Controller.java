@@ -16,9 +16,9 @@ public class Controller implements ActionListener, MouseMotionListener {
 	
 	public Controller(JFrame frame) {
 		display = new Display(800, 600);
-		ball = new Ball(10, 1, 1, 100, 100);
+		ball = new Ball(10, 1, 1, 100, 100); //change diameter of the ball by changing the first parameter
 		paddle = new Paddle(50, 300, 500);
-		timer = new Timer(5, this);
+		timer = new Timer(5, this); //change the speed of the ball 
 		
 		mainFrame = frame;
 		
